@@ -8,7 +8,7 @@ FROM ${REGISTRY}/fxwatcher:${WATCHER_VERSION}-python2
 ARG handler_file=handler.py
 ARG handler_name=Handler
 
-ENV HANDLER_DIR=/dcf/handler
+ENV HANDLER_DIR=/openfx/handler
 ENV HANDLER_FILE=${HANDLER_DIR}/${handler_file}
 ENV HANDLER_NAME=${handler_name}
 
