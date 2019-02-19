@@ -1,15 +1,15 @@
 runtimes:
   go:
-    dir: go
+    dir: go/src
     handler:
       name: Handler
   python2:
-    dir: python2
+    dir: python2/src
     handler:
       file: handler.py
       name: Handler
   python3:
-    dir: python3
+    dir: python3/src
     handler:
       file: handler.py
       name: Handler
