@@ -19,7 +19,8 @@ RUN chmod +x /fxwatcher
 
 RUN mkdir -p ${HANDLER_DIR}
 WORKDIR ${HANDLER_DIR}
-COPY . .
+COPY ./src/handler.go .
+COPY ./Gopkg.toml .
 RUN dep ensure
 RUN go build -o ${HANDLER_FILE} -buildmode=plugin .
 
