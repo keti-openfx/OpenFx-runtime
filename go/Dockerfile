@@ -10,7 +10,7 @@ ARG handler_file
 ARG handler_name=Handler
 
 ENV HANDLER_DIR=${GOPATH}/src/openfx/handler
-ENV HANDLER_FILE=${GOPATH}/src/openfx/handler/handler
+ENV HANDLER_FILE=${HANDLER_DIR}/handler
 ENV HANDLER_NAME=${handler_name}
 
 RUN cp ${GOPATH}/src/github.com/keti-openfx/openfx-watcher/go/fxwatcher /fxwatcher
