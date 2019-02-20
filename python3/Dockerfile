@@ -14,7 +14,8 @@ ENV HANDLER_NAME=${handler_name}
 
 RUN mkdir -p ${HANDLER_DIR}
 WORKDIR ${HANDLER_DIR}
-COPY . .
+COPY ./src/handler.py .
+COPY ./requirements.txt .
 RUN touch ${HANDLER_DIR}/__init__.py
 RUN pip3 install -r requirements.txt
 
