@@ -21,6 +21,8 @@ RUN pip3 install -r requirements.txt
 
 RUN cp -r /openfx/watcher/* ${HANDLER_DIR}
 
+EXPOSE 50051
+
 HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
 
 ENTRYPOINT ["python3"]
