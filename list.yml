@@ -13,3 +13,8 @@ runtimes:
     handler:
       file: handler.py
       name: Handler
+  cpp:
+    dir: cpp
+    handler:
+      file: handler.cc
+      name: Handler
