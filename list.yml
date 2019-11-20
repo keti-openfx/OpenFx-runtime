@@ -13,8 +13,9 @@ runtimes:
     handler:
       file: handler.py
       name: Handler
-  cpp:
-    dir: cpp
+  nodejs:
+    dir: nodejs
     handler:
-      file: handler.cc
+      file: handler.js
       name: Handler
+ 
