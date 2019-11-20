@@ -1,4 +1,9 @@
-FROM keti.asuscomm.com:5000/fxwatcher:0.1.0-nodejs
+# Argruments from FROM
+ARG REGISTRY
+ARG WATCHER_VERSION=0.1.0
+
+# Get watcher - if watcher is uploaded on github, remove this line.
+FROM ${REGISTRY}/fxwatcher:${WATCHER_VERSION}-nodejs
 
 ARG handler_file=handler.js
 ARG handler_name=Handler
