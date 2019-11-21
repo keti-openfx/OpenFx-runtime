@@ -18,4 +18,8 @@ runtimes:
     handler:
       file: handler.js
       name: Handler
- 
+  ruby:
+    dir: ruby
+    handler:
+      file: handler.rb
+      name: Handler 
