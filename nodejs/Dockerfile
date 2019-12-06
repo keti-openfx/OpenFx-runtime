@@ -17,7 +17,7 @@ WORKDIR ${HANDLER_DIR}
 
 COPY ./src/handler.js .
 
-RUN cp -r /openfx/watcher/* ${HANDLER_DIR}
+RUN cp -r /openfx/executor/* ${HANDLER_DIR}
 
 EXPOSE 50051
 
