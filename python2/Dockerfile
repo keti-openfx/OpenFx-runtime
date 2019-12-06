@@ -19,7 +19,7 @@ COPY ./requirements.txt .
 RUN touch ${HANDLER_DIR}/__init__.py
 RUN pip2 install -r requirements.txt
 
-RUN cp -r /openfx/watcher/* ${HANDLER_DIR}
+RUN cp -r /openfx/executor/* ${HANDLER_DIR}
 
 EXPOSE 50051
 
