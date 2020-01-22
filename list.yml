@@ -23,3 +23,8 @@ runtimes:
     handler:
       file: handler.rb
       name: Handler 
+  cpp:
+    dir: cpp
+    handler:
+      file: handler.cc
+      name: Handler
