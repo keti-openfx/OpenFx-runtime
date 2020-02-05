@@ -28,3 +28,8 @@ runtimes:
     handler:
       file: handler.cc
       name: Handler
+  java:
+    dir: java
+    handler:
+      file: Handler.java
+      name: Handler
