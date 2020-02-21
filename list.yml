@@ -33,3 +33,8 @@ runtimes:
     handler:
       file: Handler.java
       name: Handler
+  csharp:
+    dir: csharp
+    handler:
+      file: handler.cs
+      name: Handler
