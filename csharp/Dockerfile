@@ -16,6 +16,7 @@ RUN mkdir -p ${HANDLER_DIR}
 WORKDIR ${HANDLER_DIR}
 
 COPY ./src/handler.cs .
+COPY ./fxServer.csproj .
 
 RUN cp -r /openfx/executor/* ${HANDLER_DIR}
 
