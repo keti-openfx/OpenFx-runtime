@@ -1,9 +1,16 @@
 package main
 
-import sdk "github.com/keti-openfx/openfx/executor/go/pb"
+import (
+	sdk "github.com/keti-openfx/openfx/executor/go/pb"
+	"google.golang.org/grpc"
+	"context"
+	"time"
+	"fmt"
+	"log"
+)
 
 func FunctionCall(functionName string, input []byte) string {
-	// Do not Change
+	// Do not Change this.
 	address := fmt.Sprintf("%s.openfx-fn:50051", functionName)
 
 	conn, err := grpc.Dial(address, grpc.WithInsecure())
@@ -22,7 +29,7 @@ func FunctionCall(functionName string, input []byte) string {
 	}
 	return r.Output
 }
-
 func Handler(req sdk.Request) string {
+	// Only write here.
 	return string(req.Input)
 }
