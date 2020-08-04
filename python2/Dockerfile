@@ -11,6 +11,7 @@ ARG handler_name=Handler
 ENV HANDLER_DIR=/openfx/handler
 ENV HANDLER_FILE=${HANDLER_DIR}/${handler_file}
 ENV HANDLER_NAME=${handler_name}
+ENV PYTHONUNBUFFERED=0
 
 RUN mkdir -p ${HANDLER_DIR}
 WORKDIR ${HANDLER_DIR}
