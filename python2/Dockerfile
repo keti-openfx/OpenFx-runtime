@@ -23,6 +23,7 @@ RUN pip2 install -r requirements.txt
 RUN cp -r /openfx/executor/* ${HANDLER_DIR}
 
 EXPOSE 50051
+EXPOSE 50052
 
 HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
 
