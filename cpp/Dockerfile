@@ -43,6 +43,7 @@ RUN make
 ENV LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:$LD_LIBRARY_PATH
 
 EXPOSE 50051
+EXPOSE 50052
 
 HEALTHCHECK --interval=2s CMD [ -e /tmp/.lock ] || exit 1
 
