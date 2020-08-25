@@ -2,7 +2,14 @@
 
 module FxWatcher
   def FxWatcher.Handler(argStr)
-    return argStr
+	  # mesh call
+	  # functionName = "<FUNCTIONNAME>"
+	  # input = argStr
+	  # result = FxWatcher.mesh_call(functionName, input)
+	  # return result 
+	  #
+	  # single call
+	  return argStr
   end
 end
 
