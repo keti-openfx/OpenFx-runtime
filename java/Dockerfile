@@ -1,6 +1,6 @@
 # Argruments from FROM
 ARG REGISTRY=keti.asuscomm.com:5000
-ARG WATCHER_VERSION=0.1.0
+ARG WATCHER_VERSION=2.0
 
 FROM ${REGISTRY}/fxwatcher:${WATCHER_VERSION}-java
 

@@ -1,6 +1,6 @@
 # Argruments from FROM
 ARG REGISTRY
-ARG WATCHER_VERSION=0.1.0
+ARG WATCHER_VERSION=2.0
 
 # Get watcher - if watcher is uploaded on github, remove this line.
 FROM ${REGISTRY}/fxwatcher:${WATCHER_VERSION}-python2

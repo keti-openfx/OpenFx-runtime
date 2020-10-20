@@ -1,7 +1,7 @@
 # Argrumnets for FROM
 ARG REGISTRY
-ARG GO_VERSION=1.9.7
-ARG WATCHER_VERSION=0.1.0
+ARG GO_VERSION=1.12.17
+ARG WATCHER_VERSION=2.0
 
 # Get fxwatcher - if fxwatcher is uploaded on github, remove this line.
 FROM ${REGISTRY}/fxwatcher:${WATCHER_VERSION}-go as watcher

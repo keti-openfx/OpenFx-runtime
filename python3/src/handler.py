@@ -9,4 +9,4 @@ def Handler(req):
     # return result
 
     # single call
-    return req.input
+    return str.encode("[Python] ") + req.input

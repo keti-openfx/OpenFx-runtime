@@ -13,5 +13,5 @@ func Handler(req sdk.Request) string {
 	// return result
 
 	// single call
-	return string(req.Input)
+	return "[Go] " + string(req.Input)
 }

@@ -5,7 +5,7 @@ import com.google.protobuf.ByteString;
 public class Handler {
 
   public static String reply(ByteString input) {
-    return input.toStringUtf8();
+    return "[Java] " + input.toStringUtf8();
   }
 
 }
