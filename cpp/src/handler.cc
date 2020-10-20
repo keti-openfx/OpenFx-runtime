@@ -13,5 +13,5 @@ string Handler(const string req) {
   //
   // single call
   string sub = "[CPP] ";
-  return req;
+  return sub + req;
 }
