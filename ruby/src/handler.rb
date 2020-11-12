@@ -9,7 +9,7 @@ module FxWatcher
 	  # return result 
 	  #
 	  # single call
-	  return argStr
+	  return "[Ruby] " + argStr
   end
 end
 

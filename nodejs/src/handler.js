@@ -1,7 +1,5 @@
-// handler.js
-
 function Handler(argStr) {
-	return argStr;
+	return '[NodeJS] ' + argStr;
 }
 
 module.exports = Handler;
