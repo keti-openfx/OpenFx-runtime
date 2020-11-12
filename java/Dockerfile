@@ -19,6 +19,6 @@ RUN ./gradlew installDist
 
 EXPOSE 50051
 
-HEALTHCHECK --interval=2s CMD [ -e /tmp/.lock ] || exit 1
+HEALTHCHECK --interval=5s CMD [ -e /tmp/.lock ] || exit 1
 
 CMD ["./build/install/java/bin/fxwatcher"]
