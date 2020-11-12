@@ -21,7 +21,7 @@ RUN cp -r /openfx/executor/* ${HANDLER_DIR}
 
 EXPOSE 50051
 
-HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
+HEALTHCHECK --interval=5s CMD [ -e /tmp/.lock ] || exit 1
 
 ENTRYPOINT ["node"]
 CMD ["fx_server.js"]
