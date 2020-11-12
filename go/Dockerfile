@@ -23,6 +23,6 @@ RUN go build -o ${HANDLER_FILE} -buildmode=plugin ${HANDLER_DIR}/handler.go
 EXPOSE 50051
 EXPOSE 50052
 
-HEALTHCHECK --interval=2s CMD [ -e /tmp/.lock ] || exit 1
+HEALTHCHECK --interval=5s CMD [ -e /tmp/.lock ] || exit 1
 
 CMD ["./fxwatcher"]
