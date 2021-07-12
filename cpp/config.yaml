@@ -1,0 +1,17 @@
+functions:
+  cpptest3:
+    runtime: cpp
+    desc: ""
+    maintainer: ""
+    handler:
+      dir: ./src
+      file: handler.cc
+      name: Handler
+    docker_registry: 10.0.0.170:5000
+    image: 10.0.0.170:5000/cpptest
+    requests:
+      memory: 50Mi
+      cpu: 50m
+      gpu: ""
+openfx:
+  gateway: 10.0.0.170:31113

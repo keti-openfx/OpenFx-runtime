@@ -1,5 +1,5 @@
 # Argruments from FROM
-ARG REGISTRY=keti.asuscomm.com:5000
+ARG REGISTRY=10.0.0.170:5000
 ARG WATCHER_VERSION=2.0
 
 # Get watcher - if watcher is uploaded on github, remove this line.
@@ -16,9 +16,13 @@ RUN mkdir -p ${HANDLER_DIR}/src
 WORKDIR ${HANDLER_DIR}/src
 COPY ./src/handler.cc .
 COPY ./src/handler.h .
-COPY ./src/CMakeLists.txt .
+#COPY ./src/CMakeLists.txt .
 
 WORKDIR ${HANDLER_DIR}
+#COPY ./src/handler.cc .
+#COPY ./src/handler.h .
+COPY cmake cmake/
+COPY CMakeLists.txt .
 RUN mkdir -p cmake/build
 WORKDIR cmake/build
 RUN cmake -DCMAKE_PREFIX_PATH=$MY_INSTALL_DIR ../..
