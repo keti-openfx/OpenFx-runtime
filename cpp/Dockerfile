@@ -1,6 +1,6 @@
 # Argruments from FROM
-ARG REGISTRY=10.0.0.170:5000
-ARG WATCHER_VERSION=2.0
+ARG REGISTRY=10.0.0.255:5000/openfx
+ARG WATCHER_VERSION=1.0
 
 # Get watcher - if watcher is uploaded on github, remove this line.
 FROM ${REGISTRY}/fxwatcher:${WATCHER_VERSION}-cpp
