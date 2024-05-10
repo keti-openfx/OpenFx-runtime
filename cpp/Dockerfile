@@ -1,5 +1,5 @@
 # Argruments from FROM
-ARG REGISTRY=10.0.0.255:5000/openfx
+ARG REGISTRY=10.0.1.150:5000/cyy
 ARG WATCHER_VERSION=1.0
 
 # Get watcher - if watcher is uploaded on github, remove this line.
